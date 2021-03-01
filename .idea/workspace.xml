@@ -1,61 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="672247e2-30f9-45db-978e-0224fce6772a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_4_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_ecs_4_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_ram_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_sts_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_oss_aliyun_sdk_oss_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_core_2_3_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_org_jacoco_agent_runtime_0_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common_util/src/main/java/com/yntx/common/base/util/ExceptionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/yntx/handler/CommonMetaObjectHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/yntx/handler/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/service_base/src/main/java/com/yntx/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/vo/TeacherQueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_oss/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_oss/service_oss.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_oss/src/main/java/com/yntx/service/oss/ServiceOssApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_oss/src/main/java/com/yntx/service/oss/util/OssProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_oss/src/main/java/com/yntx/service/oss/util/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_oss/src/main/java/com/yntx/service/oss/util/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_oss/src/main/java/com/yntx/service/oss/util/service/impl/FileServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/service_oss/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common_util/src/main/java/com/yntx/common/base/result/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common_util/src/main/java/com/yntx/common/base/result/R.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common_util/src/main/java/com/yntx/common/base/result/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common_util/src/main/java/com/yntx/common/base/result/ResultCodeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common_util/target/classes/com/yntx/common/base/result/R.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/common_util/target/classes/com/yntx/common/base/result/R.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common_util/target/classes/com/yntx/common/base/result/ResultCodeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/common_util/target/classes/com/yntx/common/base/result/ResultCodeEnum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/TeacherService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/TeacherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/controller/admin/TeacherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/controller/admin/TeacherController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/entity/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/entity/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/service/TeacherService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/service/TeacherService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/service/impl/TeacherServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/service/impl/TeacherServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-    </list>
+    <list default="true" id="672247e2-30f9-45db-978e-0224fce6772a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
     <ignored path="$PROJECT_DIR$/common/common_util/target/" />
@@ -652,7 +598,7 @@
       <workItem from="1614221751099" duration="1212000" />
       <workItem from="1614251933975" duration="3244000" />
       <workItem from="1614507597879" duration="2258000" />
-      <workItem from="1614600714516" duration="3898000" />
+      <workItem from="1614600714516" duration="4493000" />
     </task>
     <servers />
   </component>
@@ -671,11 +617,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66736000" />
+    <option name="totallyTimeSpent" value="67331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32446808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -687,7 +632,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15875614" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15875614" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
