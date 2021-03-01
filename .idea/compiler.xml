@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="common_util" />
         <module name="service_edu" />
+        <module name="service_oss" />
         <module name="service_base" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="service" target="1.8" />
       <module name="service_base" target="1.8" />
       <module name="service_edu" target="1.8" />
+      <module name="service_oss" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +30,7 @@
       <module name="service" options="-parameters" />
       <module name="service_base" options="-parameters" />
       <module name="service_edu" options="-parameters" />
+      <module name="service_oss" options="-parameters" />
     </option>
   </component>
 </project>
