@@ -1,8 +1,11 @@
 package com.yntx.service.edu.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.yntx.service.edu.entity.Course;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.yntx.service.edu.entity.form.CourseInfoForm;
+import com.yntx.service.edu.entity.vo.CourseQueryVo;
+import com.yntx.service.edu.entity.vo.CourseVo;
 
 /**
  * <p>
@@ -20,4 +23,6 @@ public interface CourseService extends IService<Course> {
      * @return 新生成的课程id
      */
     String saveCourseInfo(CourseInfoForm courseInfoForm);
+
+    IPage<CourseVo> selectPage(Long page, Long limit, CourseQueryVo courseQueryVo);
 }
