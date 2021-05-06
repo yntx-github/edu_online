@@ -26,6 +26,13 @@ public class FileController {
     @Autowired
     private FileService fileService;
 
+    @ApiOperation(value = "测试")
+    @GetMapping("test")
+    public R test() {
+        log.info("oss test被调用");
+        return R.ok();
+    }
+
     /**
      * 文件上传
      * @param file

@@ -2,12 +2,15 @@ package com.yntx.service.edu.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.yntx.common.base.result.R;
 import com.yntx.service.edu.entity.Teacher;
 import com.yntx.service.edu.entity.vo.TeacherQueryVo;
+import com.yntx.service.edu.feign.OssFileService;
 import com.yntx.service.edu.mapper.TeacherMapper;
 import com.yntx.service.edu.service.TeacherService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,6 +26,23 @@ import java.util.Map;
  */
 @Service
 public class TeacherServiceImpl extends ServiceImpl<TeacherMapper, Teacher> implements TeacherService {
+
+    @Autowired
+    private OssFileService ossFileService;
+
+    @Override
+    public boolean removeAvatarById(String id) {
+        Teacher teacher = baseMapper.selectById(id);
+        if(teacher != null) {
+            String avatar = teacher.getAvatar();
+            if(!StringUtils.isEmpty(avatar)){
+                //删除图片
+                R r = ossFileService.removeFile(avatar);
+                return r.getSuccess();
+            }
+        }
+        return false;
+    }
 
     //分页查询
     @Override

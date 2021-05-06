@@ -22,4 +22,6 @@ public interface TeacherService extends IService<Teacher> {
 
     //根据关键字自动查询讲师名称
     List<Map<String, Object>> selectNameListByKey(String key);
+
+    boolean removeAvatarById(String id);
 }

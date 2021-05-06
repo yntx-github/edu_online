@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.yntx.common.base.result.R;
 import com.yntx.service.edu.entity.Teacher;
 import com.yntx.service.edu.entity.vo.TeacherQueryVo;
+import com.yntx.service.edu.feign.OssFileService;
 import com.yntx.service.edu.service.TeacherService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -32,6 +33,16 @@ public class TeacherController {
     @Autowired
     private TeacherService teacherService;
 
+    @Autowired
+    private OssFileService ossFileService;
+
+    @ApiOperation("测试服务调用")
+    @GetMapping("test")
+    public R test(){
+        ossFileService.test();
+        return R.ok();
+    }
+
     @GetMapping("list")
     public R findAll(){
         List<Teacher> teacherList = teacherService.list();
@@ -59,14 +70,19 @@ public class TeacherController {
         return R.error().message("该讲师不存在！");
     }
 
-    @DeleteMapping("removeById/{id}")
-    public R removeById(@PathVariable(value = "id") String id){
+    @ApiOperation(value = "根据ID删除讲师", notes = "根据ID删除讲师，逻辑删除")
+    @DeleteMapping("remove/{id}")
+    public R removeById(@ApiParam(value = "讲师ID", required = true) @PathVariable String id){
 
-        boolean res = teacherService.removeById(id);
-        if (res){
-            return R.ok().message("删除成功！");
+        //删除图片
+        teacherService.removeAvatarById(id);
+        //删除讲师
+        boolean result = teacherService.removeById(id);
+        if(result){
+            return R.ok().message("删除成功");
+        }else{
+            return R.error().message("数据不存在");
         }
-        return R.error().message("该讲师不存在！");
     }
 
     @PostMapping("save")
