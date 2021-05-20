@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Service
-@FeignClient(value = "service-oss", fallback = OssFileServiceFallBack.class)
+//@FeignClient(value = "service-oss", fallback = OssFileServiceFallBack.class)
 public interface OssFileService {
 
     @GetMapping("/admin/oss/file/test")

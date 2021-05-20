@@ -2,6 +2,7 @@ package com.yntx.service.edu.mapper;
 
 import com.yntx.service.edu.entity.Video;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author yntx
  * @since 2021-01-23
  */
+@Repository
 public interface VideoMapper extends BaseMapper<Video> {
 
 }

@@ -3,13 +3,13 @@ package com.yntx.service.edu.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.yntx.service.edu.entity.Course;
-import com.yntx.service.edu.entity.CourseDescription;
+import com.yntx.common.base.result.R;
+import com.yntx.service.edu.entity.*;
 import com.yntx.service.edu.entity.form.CourseInfoForm;
 import com.yntx.service.edu.entity.vo.CourseQueryVo;
 import com.yntx.service.edu.entity.vo.CourseVo;
-import com.yntx.service.edu.mapper.CourseDescriptionMapper;
-import com.yntx.service.edu.mapper.CourseMapper;
+import com.yntx.service.edu.feign.OssFileService;
+import com.yntx.service.edu.mapper.*;
 import com.yntx.service.edu.service.CourseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
@@ -34,6 +34,17 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
     //我们可以在CourseDescriptionMapper接口上添加@Repository注解
     @Autowired
     private CourseDescriptionMapper courseDescriptionMapper;
+
+    @Autowired
+    private VideoMapper videoMapper;
+    @Autowired
+    private ChapterMapper chapterMapper;
+    @Autowired
+    private CommentMapper commentMapper;
+    @Autowired
+    private CourseCollectMapper courseCollectMapper;
+    @Autowired
+    private OssFileService ossFileService;
 
     @Transactional(rollbackFor = Exception.class)
     @Override
@@ -69,7 +80,7 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
             queryWrapper.like("c.title", title);
         }
 
-        if (!StringUtils.isEmpty(teacherId) ) {
+        if (!StringUtils.isEmpty(teacherId)) {
             queryWrapper.eq("c.teacher_id", teacherId);
         }
 
@@ -86,5 +97,50 @@ public class CourseServiceImpl extends ServiceImpl<CourseMapper, Course> impleme
         List<CourseVo> records = baseMapper.selectPageByCourseQueryVo(pageParam, queryWrapper);
         pageParam.setRecords(records);
         return pageParam;
+    }
+
+    @Override
+    public boolean removeCoverById(String id) {
+        Course course = baseMapper.selectById(id);
+        if (course != null) {
+            String cover = course.getCover();
+            if (!StringUtils.isEmpty(cover)) {
+                //删除图片
+                R r = ossFileService.removeFile(cover);
+                return r.getSuccess();
+            }
+        }
+        return false;
+    }
+
+    @Transactional(rollbackFor = Exception.class)
+    @Override
+    public boolean removeCourseById(String id) {
+
+        //收藏信息：course_collect
+        QueryWrapper<CourseCollect> courseCollectQueryWrapper = new QueryWrapper<>();
+        courseCollectQueryWrapper.eq("course_id", id);
+        courseCollectMapper.delete(courseCollectQueryWrapper);
+
+        //评论信息：comment
+        QueryWrapper<Comment> commentQueryWrapper = new QueryWrapper<>();
+        commentQueryWrapper.eq("course_id", id);
+        commentMapper.delete(commentQueryWrapper);
+
+        //课时信息：video
+        QueryWrapper<Video> videoQueryWrapper = new QueryWrapper<>();
+        videoQueryWrapper.eq("course_id", id);
+        videoMapper.delete(videoQueryWrapper);
+
+        //章节信息：chapter
+        QueryWrapper<Chapter> chapterQueryWrapper = new QueryWrapper<>();
+        chapterQueryWrapper.eq("course_id", id);
+        chapterMapper.delete(chapterQueryWrapper);
+
+        //课程详情：course_description
+        courseDescriptionMapper.deleteById(id);
+
+        //课程信息：course
+        return this.removeById(id);
     }
 }
