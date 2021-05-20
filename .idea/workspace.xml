@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672247e2-30f9-45db-978e-0224fce6772a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/vo/CoursePublishVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/feign/OssFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/feign/OssFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/ChapterMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/ChapterMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CommentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CommentMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseCollectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseCollectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/VideoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/VideoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/xml/CourseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/xml/CourseMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/CourseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/CourseServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/feign/OssFileService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_edu/target/classes/com/yntx/service/edu/feign/OssFileService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/service_oss/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_oss/target/classes/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,10 +45,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/CourseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/CourseService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/CourseServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+            <state relative-caret-position="123">
+              <caret line="155" column="25" lean-forward="true" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="25" />
+              <folding>
+                <element signature="e#5007#5008#0" expanded="true" />
+                <element signature="e#5070#5071#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/xml/CourseMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -61,15 +101,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -93,49 +124,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/TeacherController.java">
+        <entry file="file://$PROJECT_DIR$/service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+            <state relative-caret-position="189">
+              <caret line="149" selection-start-line="149" selection-end-line="149" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/vo/CoursePublishVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1207">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/service_oss/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/service/service_oss/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -156,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/Video.java" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/common/service_base/src/main/java/com/yntx/config/Swagger2Config.java" />
         <option value="$PROJECT_DIR$/common/service_base/pom.xml" />
@@ -185,8 +188,6 @@
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/form/CourseInfoForm.java" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/vo/CourseQueryVo.java" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/vo/CourseVo.java" />
-        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseMapper.java" />
-        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/xml/CourseMapper.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/service/service_edu/pom.xml" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/EduApp.java" />
@@ -196,17 +197,20 @@
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/TeacherServiceImpl.java" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/TeacherController.java" />
         <option value="$PROJECT_DIR$/service/service_oss/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/service/pom.xml" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/feign/fallback/OssFileServiceFallBack.java" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/feign/OssFileService.java" />
-        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/CourseController.java" />
-        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/CourseService.java" />
-        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/CourseServiceImpl.java" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/VideoMapper.java" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/ChapterMapper.java" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CommentMapper.java" />
         <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseCollectMapper.java" />
+        <option value="$PROJECT_DIR$/service/pom.xml" />
+        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/vo/CoursePublishVo.java" />
+        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseMapper.java" />
+        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/xml/CourseMapper.xml" />
+        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/CourseController.java" />
+        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/CourseServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -661,7 +665,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EduApp">
+  <component name="RunManager" selected="Spring Boot.ServiceOssApplication">
     <configuration name="EduApp" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.yntx.service.edu.EduApp" />
       <module name="service_edu" />
@@ -734,8 +738,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EduApp" />
         <item itemvalue="Spring Boot.ServiceOssApplication" />
+        <item itemvalue="Spring Boot.EduApp" />
         <item itemvalue="Application.EduApp" />
         <item itemvalue="JUnit.CodeGenerator.genCode" />
       </list>
@@ -782,7 +786,7 @@
       <workItem from="1620364667481" duration="792000" />
       <workItem from="1620555421703" duration="86000" />
       <workItem from="1621519345550" duration="533000" />
-      <workItem from="1621520068875" duration="811000" />
+      <workItem from="1621520068875" duration="2018000" />
     </task>
     <servers />
   </component>
@@ -801,13 +805,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79439000" />
+    <option name="totallyTimeSpent" value="80646000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34270516" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34270516" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -817,7 +820,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22258593" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.57283145" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -846,13 +849,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="112" column="30" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-extension/3.3.1/mybatis-plus-extension-3.3.1.jar!/com/baomidou/mybatisplus/extension/service/IService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1108,13 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/xml/CourseMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/feign/OssFileService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1132,23 +1121,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/CourseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/CourseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1204,20 +1176,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/CourseServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="38" column="36" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1262,8 +1220,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1207">
-          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+        <state relative-caret-position="189">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/entity/vo/CoursePublishVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/CourseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/mapper/xml/CourseMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/controller/admin/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/service_edu/src/main/java/com/yntx/service/edu/service/impl/CourseServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="155" column="25" lean-forward="true" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="25" />
+          <folding>
+            <element signature="e#5007#5008#0" expanded="true" />
+            <element signature="e#5070#5071#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

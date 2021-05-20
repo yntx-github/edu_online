@@ -4,6 +4,7 @@ package com.yntx.service.edu.controller.admin;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.yntx.common.base.result.R;
 import com.yntx.service.edu.entity.form.CourseInfoForm;
+import com.yntx.service.edu.entity.vo.CoursePublishVo;
 import com.yntx.service.edu.entity.vo.CourseQueryVo;
 import com.yntx.service.edu.entity.vo.CourseVo;
 import com.yntx.service.edu.service.CourseService;
@@ -74,6 +75,34 @@ public class CourseController {
         if(result){
             return R.ok().message("删除成功");
         }else{
+            return R.error().message("数据不存在");
+        }
+    }
+
+    @ApiOperation("根据ID获取课程发布信息")
+    @GetMapping("course-publish/{id}")
+    public R getCoursePublishVoById(
+            @ApiParam(value = "课程ID", required = true)
+            @PathVariable String id){
+
+        CoursePublishVo coursePublishVo = courseService.getCoursePublishVoById(id);
+        if (coursePublishVo != null) {
+            return R.ok().data("item", coursePublishVo);
+        } else {
+            return R.error().message("数据不存在");
+        }
+    }
+
+    @ApiOperation("根据id发布课程")
+    @PutMapping("publish-course/{id}")
+    public R publishCourseById(
+            @ApiParam(value = "课程ID", required = true)
+            @PathVariable String id){
+
+        boolean result = courseService.publishCourseById(id);
+        if (result) {
+            return R.ok().message("发布成功");
+        } else {
             return R.error().message("数据不存在");
         }
     }
